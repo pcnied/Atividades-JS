@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+   
+
+    <script>
+    /*
+    O custo de um carro novo ao consumidor é a soma do custo de
+    fábrica com a porcentagem do distribuidor e dos impostos
+    (aplicados ao custo de fábrica). Supondo que o percentual do
+    distribuidor seja de 28% e os impostos de 45%, escrever um
+    algoritmo para ler o custo de fábrica de um carro, calcular e escrever
+    o custo final ao consumidor.
+
+    Variáveis:
+    Impostos = 45% 
+    Porcentagem do Distribuidor = 28%
+    Custos de Fábrica = 45000
+
+    Preço final = * (1 + 0.28 + 0.45)
+
+    Passos
+    Definir variáveis
+    Ler variáveis
+    Escrever variáveis
+
+    Calcular o preço final
+    Ler e escrever
+    */
+
+    let custoFabrica = 45000
+    let imposto = custoFrabrica * 0.45
+    let custoDistribuidor = custoFabrica * 0.28
+    
+    console.log('Valor do imposto', imposto)
+    console.log ('Custo do Distribuidor', custoDistribuidor)
+
+    let precoConsumidor = custoFabrica + imposto + custoDistribuidor
+    </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 - Estruturas Condicionais</title>
+</head>
+<body>
+    <script>
+        /*
+        Atividade 1:
+        Desenvolva um algoritmo que faça o cálculo do índice de massa
+        corporal de uma pessoa. Esse algoritmo deve solicitar ao usuário
+        que digite sua altura, em seguida solicitar que digite seu peso e que
+        lhe exiba o status. O status vai variar da seguinte forma:
+        a. Se o IMC for menor que 18,5 o status a ser mostrado deve ser
+        “Você está abaixo da faixa de peso ideal”;
+        b. Se o IMC estiver acima de 24,99 o status a ser mostrado será
+        “Você está acima da faixa de peso ideal”;
+        c. Se o IMC for igual ou maior que 18,5 e igual ou menor que
+        24,99, o status a ser mostrado será “Você está dentro da faixa
+        de peso ideal”.
+
+        Variáveis:
+        Peso = 
+        Altura = 
+        Status = 
+        Cálculo IMC = 
+        */
+        
+        // const peso = 45;
+        // const altura = 1.75;
+        // const IMC = peso/ (altura*altura);
+        // let status = '';
+        
+        // if(IMC < 18.5) {
+        //    status = 'Você está abaixo da faixa de peso ideal!';
+        // } else if (IMC >= 18.5 && IMC <= 25) {
+        //    status = 'Você está dentro da faixa de peso ideal!';
+        // } else {
+        //     status = 'Você está acima da faixa de peso ideal!';
+        // }
+
+        // console.log(status)
+        // console.log(IMC)
+
+        /*
+        Atividade 2:
+        Escreva um algoritmo que solicite 2 números e uma operação
+        matemática. O algoritmo deve realizar o cálculo com os 2 números
+        digitados conforme a operação informada.
+
+        Variáveis:
+        let numero1 = 
+        let numero2 = 
+        let operacao = 
+        */
+
+        // const num1 = 23;
+        // const num2 = 3;
+        // let operacao = '/';
+
+        // if(operacao == '*') {
+        //     console.log(num1*num2);
+        // } else if(operacao == '/') {
+        //     console.log(num1/num2);
+        // } else if(operacao == '+') {
+        //     console.log(num1+num2);
+        // } else if(operacao == '-') {
+        //     console.log(num1-num2);
+        // } else console.log('Essa operação é inválida!')
+
+        /*
+        Atividade 3:
+        Faça um algoritmo que simule um caixa eletrônico. Nesse algoritmo
+        a conta do usuário deve ser criada já com um saldo positivo. O
+        usuário precisa informar a quantidade de dinheiro que deseja
+        retirar, esse valor deve ser um número positivo, múltiplo de 5 e
+        menor do que o saldo. Cada saque eletrônico cobra uma taxa de
+        R$4.50. Ao final deve ser informado o saldo da conta caso dê tudo certo com o saque, 
+        e se o usuário informar um valor maior que o saldo deve ser informado ao usuário que o mesmo não tem dinheiro suficiente em conta para realizar o saque.
+        OBS: Na verificação se o valor do saque é maior que o saldo deve
+        ser considerado e também contabilizado o valor da taxa a ser
+        cobrada pelo saque. Ou seja, o valor a ser sacado somado ao valor
+        da taxa do saque não pode ser maior que o saldo disponível.
+        
+        Variáveis:
+        Saldo = 1200
+        Saque = 1200
+        Taxa = 4.5
+
+        Lógica:
+        Saldo > 0
+        Saque > 0
+        Saque % 5 = 0
+        Saque + taxa < saldo
+        /*
+    
+        // let saldo = 1400;
+        // const taxa = 4.5;
+        // const saque = 254;
+
+        // if (saldo > 0) {
+        //     if (saque > 0 && saque % 5 === 0 && saque + taxa < saldo) {
+        //         saldo = saldo - saque - taxa;
+        //         console.log(saldo);
+        //     } else if (saque >= saldo) {
+        //         console.log("Saldo insuficiente");
+        //     } else if (saque % 5 !== 0 || saque < 0) {
+        //         console.log("Seu saque não é válido");
+        //     }
+        // } else {
+        //     console.log("Saldo não é positivo");
+        // }
+
+        /*
+        Exercício 4:
+        Faça um algoritmo que leia a idade e peso de um atleta e imprima
+        a sua categoria, de acordo com a seguinte tabela:
+
+        Idade, Peso e Categoria:
+
+        Até 12 anos - Infantil
+        13 a 16 anos Até 40kg Juvenil leve
+        Acima de 40kg Juvenil pesado
+        17 a 24 anos Até 45kg Sênior leve
+        Acima de 45kg até 60kg Sênior médio
+        Acima de 60kg Sênior pesado
+        Acima de 24 anos - Veterano
+
+        Variáveis:
+        Idade
+        Peso
+        Categoria
+
+        Lógica:
+        Infantil
+        idade <= 12 
+
+        Juvenil
+        13 <= idade <=16
+        leve
+        peso <= 40
+        pesado
+        peso > 40
+
+        Sênior
+        17 <= idade <=24
+        leve 
+        peso <= 45
+        medio
+        45 < peso <=60
+        pesado
+        peso > 60
+
+        Veterano
+        idade > 24
+        */
+
+        // const idade = 11;
+        // const peso = 80;
+        // let categoria = "";
+
+        // if (idade <= 12) {
+        //     categoria = "Infantil";
+        // } else if (idade >= 13 && idade <= 16 && peso <= 40) {
+        //     categoria = "Juvenil leve";
+        // } else if (idade >= 13 && idade <= 16 && peso > 40) {
+        //     categoria = "Juvenil pesado";
+        // } else if (idade >= 17 && idade <= 24 && peso < 45) {
+        //     categoria = "Sênior leve";
+        // } else if (idade >= 17 && idade <= 24 && peso > 45 && peso <= 60) {
+        //     categoria = "Sênior médio";
+        // } else if (idade >= 17 && idade <= 24 && peso > 60) {
+        //     categoria = "Sênior pesado";
+        // } else if (idade > 24) {
+        //     categoria = "Veterano";
+        // }
+        // console.log(`Sua categoria é ${categoria}`);
+
+        /*
+        Exercício 5:
+        Escreva um programa que pergunte a velocidade de um carro. Caso
+        ultrapasse 80Km/h, exiba uma mensagem dizendo que o usuário foi
+        multado. Nesse caso, exiba o valor da multa, cobrando R$5 por cada
+        km acima da velocidade permitida.
+
+        Váriaveis:
+        Velocidade
+        Multa
+
+        Lógica:
+        Velocidade > 80
+        Multa = (velocidade - 80) * 5
+        */
+
+        // const velocidade = 80;
+
+        // if (velocidade > 80) {
+        //     const multa = (velocidade - 80) * 5;
+        //     console.log(`Você está acima da velocidade, sua multa é de R$${multa},00`);
+        // } else {
+        //     console.log("Abaixo da velocidade");
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        Escreva um algoritmo que armazene o ano atual e o ano de
+        nascimento de uma pessoa. Escrever uma mensagem no console
+        que diga se ela poderá ou não votar este ano (não é necessário
+        considerar o mês em que a pessoa nasceu).
+        */
+
+        const anoNascimento = 2003;
+        const anoAtual = new Date().getFullYear();
+        const podeVotar = anoAtual - anoNascimento;
+
+        if(podeVotar >= 18) {
+            console.log(`Você pode votar!`);
+        } else {
+            console.log(`Você não pode votar!`);
+        }
+    </script>
+</body>
+</html>
