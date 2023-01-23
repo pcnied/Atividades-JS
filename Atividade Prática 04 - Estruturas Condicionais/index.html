@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const alturas = [1.89, 1.83, 1.63, 1.69, 1.55, 1.56, 1.84, 1.63, 1.50, 2.03, 1.96, 1.70, 1.75, 1.61, 1.91]
+
+        let index = 0;
+        let maiorAltura = alturas[index];
+        let menorAltura = alturas[index];
+
+        while(index < 14) 
+            if(alturas[index] > maiorAltura) {
+                maiorAltura = alturas[index];
+            }
+            if(alturas[index] > menorAltura) {
+                menorAltura = alturas[index];
+        }
+
+        console.log(`Maior altura:`, maiorAltura);
+        console.log(`Menor altura:`, menorAltura);
+
+    </script>
+</body>
+</html>
