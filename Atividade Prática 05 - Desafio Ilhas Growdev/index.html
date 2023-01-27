@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5</title>
+</head>
+<body>
+    <script>
+
+    let saque = Number(prompt("Digite o valor desejado: "));
+    let notasSacada50 = 0;
+    let notasSacada10 = 0;
+    let notasSacada5 = 0;
+    let notasSacada1 = 0;
+
+    while (saque >= 50) {
+    saque = saque - 50;
+    notasSacada50++;
+    }
+    while (saque >= 10) {
+    saque = saque - 10;
+    notasSacada10++;
+    }
+    while (saque >= 5) {
+    saque = saque - 05;
+    notasSacada5++;
+    }
+    while (saque >= 1) {
+    saque = saque - 01;
+    notasSacada1++;
+    }
+
+    console.log("Nota 50", notasSacada50);
+    console.log("Nota 10", notasSacada10);
+    console.log("Nota 5", notasSacada5);
+    console.log("Nota 01", notasSacada1);
+    </script>
+</body>
+</html>
