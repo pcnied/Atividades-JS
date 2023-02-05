@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 9</title>
+  </head>
+  <body>
+    <button onclick="atividade1()">Atividade 1</button>
+    <br/>
+    <br/>
+    <button onclick="atividade2()">Atividade 2</button>
+    <br/>
+    <br/>
+    <button onclick="atividade3()">Atividade 3</button>
+
+    <script>
+      /*
+        Atividade 1:
+        Desenvolva um algoritmo para percorrer um vetor de 15 elementos
+        inteiros já preenchido e imprima todos os valores pares.
+        */
+
+      function atividade1() {
+        const lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+        for (let index = 0; index < lista.length; index++) {
+          if (lista[index] % 2 == 0) {
+            console.log(lista[index]);
+          }
+        }
+      }
+
+    /*
+    Atividade 2:
+    Desenvolva um algoritmo para percorrer um vetor de 20 elementos
+    inteiros e no final mostre a soma de todos os elementos.        
+    */
+
+      function atividade2() {
+        const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+        let soma = 0;
+
+        for (let index = 0; index < numeros.length; index++) {
+          soma = soma + numeros[index];
+          console.log(soma);
+        }
+      }
+
+    /*
+    Atividade 3:
+    Desenvolva um algoritmo que preenche um vetor com os 4
+    primeiros números perfeitos.
+    */
+
+    function atividade3(){
+        let list = [];
+
+        for (let i = 1; list.length < 4; i++) {
+            let somaDivisores = 0;
+            for (let contador = 1; contador < i; contador++) {
+                if(i % contador === 0) {
+                    somaDivisores = somaDivisores + contador
+                } 
+            
+            }
+            if(somaDivisores === i) {
+                list.push(i)
+            } 
+        }
+        console.log(list)
+    }
+
+    
+    </script>
+  </body>
+</html>
