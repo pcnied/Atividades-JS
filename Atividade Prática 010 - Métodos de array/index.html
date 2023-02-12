@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <script>
+        /*
+        Atividade 1:
+        Considere o seguinte array:
+        (Imagem)
+        a. Imprima no console o índice do primeiro salário maior que
+        7.500 utilizando o findIndex
+        b. Imprima no console a lista de salários em ordem crescente
+        utilizando o sort
+        c. Imprima no console a lista de salários em ordem decrescente
+        utilizando o sort
+        d. Utilize a função Some, para descobrir se existe algum salário
+        superior a 10.000, imprima verdadeiro no console caso exista,
+        caso contrário falso.
+        e. Crie uma nova lista filtrada com os salários que são maior que
+        8.000 utilizando o filter
+        */
+
+        function atividade1() {
+        const salarios = [5000.00, 5460.50, 3452.00, 6900.00, 7590.10, 8012.99, 1290.00, 15000.00]
+
+        const maior = salarios.findIndex(function (item) {
+            return item > 7500.00;
+        })
+        console.log(`índice do maior que 7500: ${maior}`)
+    }
+
+    atividade1()
+
+
+
+    /*
+    Atividade 2:
+    James estava criando uma array com as cores do arco-íris, e ele
+    esqueceu algumas cores. As cores padrão de um arco-íris são
+    normalmente listadas nesta ordem:
+
+    const rainbow = ["Vermelho", "Laranja", "Amarelo", "Verde", "Azul",
+    "Roxo"];
+
+    mas James tinha isto:
+    const rainbow = ["Vermelho", "Laranja", "Preto", "Azul"];       
+
+    Usando somente o método splice insira as cores que faltam na array e
+    remova a cor "Preto", seguindo estes passos:
+
+    a. Remova "Preto"
+    b. Adicione "Amarelo" e "Verde"
+    c. Adicione "Roxo"
+    */
+
+    // function cores () {
+    //     const rainbow = ["Vermelho", "Laranja", "Preto", "Azul"];
+    //     rainbow.splice(2, 1, "Amarelo", "Verde");
+    //     rainbow.splice(5, 0, "Roxo")
+    //     console.log(rainbow)
+    // }
+    // cores()
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

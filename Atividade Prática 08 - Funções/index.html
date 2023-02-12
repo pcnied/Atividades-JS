@@ -1,158 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercício 8</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        /*
-        Atividade 1:
-        Crie uma função que recebe 3 notas de um aluno por parâmetro e
-        uma letra. Se a letra for A a função deve calcular a média aritmética,
-        se for P, a média ponderada (peso: 5, 3 e 2).
-        */
+      /*
+    Atividade 1:
+    Crie uma função que recebe 3 notas de um aluno por parâmetro e
+    uma letra. Se a letra for A a função deve calcular a média aritmética,
+    se for P, a média ponderada (peso: 5, 3 e 2).
+    */
 
+        let letra = prompt('Digite A ou P:')
+      function media(nota1, nota2, nota3, letra) {
+        let media;
+        if (letra === "A" || letra === "a") {
+          media = (nota1 + nota2 + nota3) / 3;
+          console.log("Média aritimética é: ", media);
+        } else {
+          media = (nota1 * 5 + nota2 * 3 + nota3 * 2) / 10;
+          console.log("Média ponderada é: ", media);
+        }
+      }
+      media(5, 7, 8, "x");
 
+      /*
+    Atividade 2:
+    Crie uma função que recebe um valor inteiro e retorne verdadeiro se
+    for ímpar ou falso se for par.
+    */
+      // function parOuImpar(numero) {
+      //     if(numero % 2 === 0) {
+      //         alert(`O número é par!`)
+      //         return numero
+      //     } else {
+      //         alert(`O número é ímpar!`)
+      //         return numero
+      //     }
+      // }
 
-        /*
-        Atividade 2:
-        Crie uma função que recebe um valor inteiro e retorne verdadeiro se
-        for ímpar ou falso se for par.
-        */
+      // parOuImpar(Number(prompt(`Digite um número:`)))
 
-        // function parOuImpar(numero) {
-        //     if(numero % 2 === 0) {
-        //         alert(`O número é par!`)
-        //         return numero
-        //     } else {
-        //         alert(`O número é ímpar!`)
-        //         return numero
-        //     }
-        // }
-        
-        // parOuImpar(Number(prompt(`Digite um número:`)))
+      /*
+    Atividade 3:
+    Crie uma função que recebe por parâmetro um valor inteiro e
+    positivo e retorne verdadeiro se o número for primo ou falso se não
+    for.
+    */
+      //  function ePrimo(numero) {
+      //  let divValor = 0
+      //  if (numero <= 1) {
+      //  console.log('O número é primo?');
+      //  return false
+      //  }
+      // for(let i = 1; i <= numero; i++) {
+      //      if (numero % i === 0 ) {
+      //          divValor++
+      //      }
+      // }
+      //         if (divValor === 2) {
+      //             console.log('O número é primo?');
+      //             return true
+      //         }
+      //         else {
+      //             console.log('O número é primo?');
+      //             return false
+      //    }
+      // }
+      // console.log(ePrimo(4));
 
-        /*
-        Atividade 3:
-        Crie uma função que recebe por parâmetro um valor inteiro e
-        positivo e retorne verdadeiro se o número for primo ou falso se não
-        for.
-        */
+      /*
+    Atividade 4:
+    Crie uma função que recebe por parâmetro o tempo de duração de
+    uma fábrica expressa em segundos e retorna esse tempo em horas,
+    minutos e segundos.
+    */
+      // function tempo(segundos) {
+      //     let minuto = 0;
+      //     let hora = 0;
+      //     while(segundos < 0) {
+      //         return segundos = 0;
+      //     }
+      //     while(segundos >= 60) {
+      //     minuto++
+      //     segundos = segundos - 60
+      // }
+      //     while(minuto >= 60) {
+      //     hora++
+      //     minuto = minuto - 60
+      // }
+      // return (`(Hora(s): ${hora} | Minuto(s): ${minuto} | Segundo(s): ${segundos}`)
+      // }
+      // let numeracao = Number(prompt('Digite a duração:'))
+      // alert(tempo(numeracao));
 
-        //  function ePrimo(numero) {
-        //  let divValor = 0
-        //  if (numero <= 1) {
-        //  console.log('O número é primo?');
-        //  return false
-        //  }
+      /*
+    Atividade 5:
+    Crie uma função que recebe um valor inteiro e retorne verdadeiro se
+    é um valor perfeito ou falso se não for. Um valor é dito perfeito
+    quando ele é igual a soma dos seus divisores excetuando ele
+    próprio.
+    */
 
-        // for(let i = 1; i <= numero; i++) {
-        //      if (numero % i === 0 ) {
-        //          divValor++
-        //      }
-        // }
+      /*
+    Atividade 6:
+    Crie uma função chamada acessoAoSite() que não tenha
+    parâmetro. Esta função será chamada ao abrir a página e mostrará
+    um alerta informando “Bem vindo ao site”.
+    */
 
-        //         if (divValor === 2) {
-        //             console.log('O número é primo?');
-        //             return true
-        //         }
-        //         else {
-        //             console.log('O número é primo?');
-        //             return false
-        //    }
-        // }
+      /*
+    Atividade 7:
+    Crie uma função chamada mostrarMensagem() que não tenha
+    parâmetro. Esta função será chamada ao abrir a página e mostrará
+    uma mensagem no console.log() informando “Acesso à aplicação
+    NomeAplicação” e um alerta informando “Bem vindo à aplicação
+    NomeApliação”. Sendo que o nome da aplicação deve ser salvo em
+    uma variável para mostrar nas mensagens.
+    */
+      // function mostrarMensagem() {
+      //     let nomeAplicacao = "Aplicativo Redondudo";
+      //     console.log(`Acesso à aplicação ${nomeAplicacao}`);
+      //     alert(`Acesso à aplicação ${nomeAplicacao}`)
+      // }
+      // mostrarMensagem()
+      /*
+    Atividade 8:
+    Crie uma função chamada mostrarDobro(num), que recebe um
+    parâmetro sendo um número inteiro. Esta função será chamada ao
+    abrir a página e mostrará um alerta com o resultado. Exemplo: “O
+    dobro do número 5 é 10.”
+    */
+      // let num = parseInt(Number(prompt(`Digite um número:`)))
+      // function mostrarDobro(num) {
+      //     alert(`O dobro de de ${num} é ${num * 2}`)
 
-        // console.log(ePrimo(4));
-        
-        /*
-        Atividade 4:
-        Crie uma função que recebe por parâmetro o tempo de duração de
-        uma fábrica expressa em segundos e retorna esse tempo em horas,
-        minutos e segundos.
-        */
+      // }
+      // mostrarDobro(num)
 
-        // function tempo(segundos) {
+      /*
+    Atividade 9:     
+    Crie uma função chamada calcularMedia(nota1, nota2, nota3,
+    nome), que recebe 4 parâmetros sendo três inteiros e um texto
+    (String). Esta função será chamada ao abrir a página e mostrará um
+    alerta com a média. Exemplo: “João, sua média é 70.” A função
+    também deve mostrar no console.log() as notas recebidas. Exemplo
+    “Nota 1: 60, Nota 2: 70, Nota 3: 80”.
+    */
 
-        //     let minuto = 0;
-        //     let hora = 0;
+      // function calcularMedia(nota1, nota2, nota3, nome) {
+      //     let media;
+      //     media = (nota1 + nota2 + nota3) /3;
+      //     alert(`A média de ${nome} foi ${media}.`)
+      //     console.log(`Nota 1: ${nota1} Nota 2: ${nota2} Nota 3: ${nota3}`)
+      // }
 
-        //     while(segundos < 0) {
-        //         return segundos = 0;
-        //     }
-        //     while(segundos >= 60) {
-        //     minuto++
-        //     segundos = segundos - 60
-        // }
-        //     while(minuto >= 60) {
-        //     hora++
-        //     minuto = minuto - 60 
-        // }
-        // return (`(Hora(s): ${hora} | Minuto(s): ${minuto} | Segundo(s): ${segundos}`)
-        // }
-
-        // let numeracao = Number(prompt('Digite a duração:'))
-        // alert(tempo(numeracao));
-        
-        /*
-        Atividade 5:
-        Crie uma função que recebe um valor inteiro e retorne verdadeiro se
-        é um valor perfeito ou falso se não for. Um valor é dito perfeito
-        quando ele é igual a soma dos seus divisores excetuando ele
-        próprio.
-        */
-
-
-
-        /*
-        Atividade 6:
-        Crie uma função chamada acessoAoSite() que não tenha
-        parâmetro. Esta função será chamada ao abrir a página e mostrará
-        um alerta informando “Bem vindo ao site”.
-        */
-
-        
-
-        /*
-        Atividade 7:
-        Crie uma função chamada mostrarMensagem() que não tenha
-        parâmetro. Esta função será chamada ao abrir a página e mostrará
-        uma mensagem no console.log() informando “Acesso à aplicação
-        NomeAplicação” e um alerta informando “Bem vindo à aplicação
-        NomeApliação”. Sendo que o nome da aplicação deve ser salvo em
-        uma variável para mostrar nas mensagens.
-        */
-
-        // function mostrarMensagem() {
-        //     let nomeAplicacao = "Aplicativo Redondudo";
-        //     console.log(`Acesso à aplicação ${nomeAplicacao}`);
-        //     alert(`Acesso à aplicação ${nomeAplicacao}`)
-        // }
-
-        // mostrarMensagem()
-
-        /*
-        Atividade 8:
-        Crie uma função chamada mostrarDobro(num), que recebe um
-        parâmetro sendo um número inteiro. Esta função será chamada ao
-        abrir a página e mostrará um alerta com o resultado. Exemplo: “O
-        dobro do número 5 é 10.”
-        */
-
-        // let num = parseInt(Number(prompt(`Digite um número:`)))
-
-        // function mostrarDobro(num) {
-        //     alert(`O dobro de de ${num} é ${num * 2}`)
-            
-        // }
-        // mostrarDobro(num)
-
-        
-        
-        
-        
+      // calcularMedia(5, 7, 10, 'Peterson')
     </script>
-</body>
+  </body>
 </html>
