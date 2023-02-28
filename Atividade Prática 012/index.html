@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 12</title>
+  </head>
+  <body>
+    <script>
+    /*
+    1. Imprima no console a quantidade de pessoas Total.
+    2. Imprima no console a quantidade de pessoas pessoas do sexo
+    Feminino.
+    3. Imprima no console a soma do salário de todas as pessoas.
+    4. Imprima no console a média do salário de todas as pessoas.
+    5. Imprima no console a soma do salário de todos as pessoas do sexo
+    Masculino
+    6. Imprima no console a média do salário de todas as pessoas do sexo
+    Masculino
+    7. Utilize a função Some, para descobrir se existe algum salário
+    superior a R$ 7.000, imprima verdadeiro no console caso exista, caso
+    contrário falso.
+    8. Utilize a função findIndex, para descobrir a posição da pessoa de
+    nome 'Eva Trindade'.
+    9. Utilize a função filter, para filtrar todas pessoas que o nome possua o
+    sobrenome "Silva".
+    10. Imprima os nomes utilizando o MAP
+    */
+
+    const data = [
+    {
+    nome: 'Roger Medeiros',
+    sexo: 'M',
+    salario: 3250,
+    },
+    {
+    nome: 'Carolina Silva',
+    sexo: 'F',
+    salario: 1200,
+    },
+    {
+    nome: 'Cristina Avila',
+    sexo: 'F',
+    salario: 8100,
+    },
+    {
+    nome: 'Gustavo Hoffman',
+    sexo: 'M',
+    salario: 5200.35,
+    },
+    {
+    nome: 'Eva Trindade',
+    sexo: 'F',
+    salario: 2501,
+    },
+    {
+    nome: 'Andre Mathias',
+    sexo: 'M',
+    salario: 1750,
+    },
+    {
+    nome: 'Joice Castro da Silva',
+    sexo: 'F',
+    salario: 3350.25,
+    },
+    ];
+
+    // 1
+    // console.log(`A quantidade de pessoas é: ${data.length}.`);
+
+    // 2
+    // console.log(`A quantidade de mulheres é: ${data.filter(pessoa => pessoa.sexo === 'F').length}.`);
+
+    // 3
+    // let soma = 0;
+    // data.forEach(function (funcionarios) {
+    //     soma += funcionarios.salario;
+    // })
+    // console.log(`O valor total dos salários é: ${soma}.`);
+
+    // 4
+    // console.log(`A média dos salários é: ${(soma / data.length).toFixed(2)}.`);
+
+    // 5
+    // let somaSalarioMasc = 0;
+    // data.forEach(function(elemento) {
+    //     if(elemento.sexo == 'M') {
+    //         somaSalarioMasc += elemento.salario;
+    //     }
+    // })
+
+    // console.log(`A soma dos salários das pessoas do sexo masculino é: ${somaSalarioMasc}.`);
+
+    // 6
+    // let somaSalarioMas = 0;
+    // data.forEach(function(pessoa) {
+    //     if(pessoa.sexo === 'M') {
+    //         somaSalarioMas++;
+    //     }
+    // })
+    // console.log(`A soma dos salários das pessoas do sexo masculino é: ${(somaSalarioMasc/somaSalarioMas).toFixed(2)}.`);
+
+    // 7
+    // const salarioGrande = data.some(function(salarioMaior){
+    //     return salarioMaior.salario >= 7000;
+    // })
+
+    // console.log(`Existe um salário maior que 7.000? ${salarioGrande}`);
+
+    // 8
+    // const posicao = data.findIndex(function (buscar) {
+    //     return buscar.nome == 'Eva Trindade';
+    // })
+
+    // console.log(`A posição de Eva Trindade na lista é: ${posicao}.`);
+
+    // 9
+    // const sobrenome = data.filter(function(sobrenomeSilva) {
+    //     return sobrenomeSilva.nome.includes('Silva');
+    // })
+    // console.log(sobrenome);
+
+    // 10
+    console.log(data.map(function (pessoas) {
+        return pessoas.nomes
+    }))
+
+    </script>
+  </body>
+</html>

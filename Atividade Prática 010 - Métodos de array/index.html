@@ -25,18 +25,61 @@
         8.000 utilizando o filter
         */
 
-        function atividade1() {
-        const salarios = [5000.00, 5460.50, 3452.00, 6900.00, 7590.10, 8012.99, 1290.00, 15000.00]
+            const salarios = [5000.00, 5460.50, 3452.00, 6900.00, 7590.10, 8012.99, 1290.00, 15000.00]
 
-        const maior = salarios.findIndex(function (item) {
-            return item > 7500.00;
-        })
-        console.log(`índice do maior que 7500: ${maior}`)
-    }
+            function atividade1() {
+            const maior = salarios.findIndex(function (item) {
+                return item > 7500.00;
+            })
+            console.log(`índice do maior que 7500: ${maior}`)
+        }
+            
+            atividade1()
 
-    atividade1()
+            function atividade2() {
+            const ordemSalario = salarios.sort((a, b) => {
+                if(a > b) return 1;
+                if(a < b) return -1;
+                return 0;
+            })
+            console.log(`A ordem dos salários é: ${ordemSalario}`)
+        }
 
+        atividade2()
 
+        function atividade3() {
+            const ordemSalario = salarios.sort((a, b) => {
+                if(a > b) return -1;
+                if(a < b) return 1;
+                return 0;
+            })
+            console.log(`A ordem dos salários é: ${ordemSalario}`)
+        }
+
+        atividade3()
+
+        function atividade4() {
+            const salarioSuperior = salarios.some(verificacaoSalario)
+            function verificacaoSalario(salarioSuperior) {
+                salarioSuperior > 10000
+                return true
+            }
+            console.log(`Há algum salário maior que 10.000? ${salarioSuperior}`)
+        }
+
+        atividade4()
+
+        function atividade5() {
+            const salarioSuperior = salarios.filter(verificacaoSalario)
+            function verificacaoSalario(salarioSuperior) {
+                if(salarioSuperior > 8000) {
+                    return salarioSuperior
+                }
+            }
+            console.log(`Quais são os salários maiores que 8.000? ${salarioSuperior}`)
+        }
+
+        atividade5()
 
     /*
     Atividade 2:
